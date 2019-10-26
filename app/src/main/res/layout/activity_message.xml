@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_but"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Share your files here"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f6f4ff"
+        android:fontFamily="@font/aclonica"/>
+
+    <TextView
+        android:id="@+id/usrName"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#f6f4ff"
+        android:fontFamily="@font/aclonica"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.95"
+        android:fontFamily="@font/aclonica"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_back"
+        android:fontFamily="@font/aclonica"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true" />
+
+    <GridLayout
+        android:id="@+id/gridone"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:rowCount="1"
+        android:useDefaultMargins="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/buttonshare"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/aclonica"
+            android:text="share"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/aclonica"
+            android:text="Send"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/selectGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:alignmentMode="alignBounds"
+        android:background="#0c0f12"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:rowCount="1"
+        android:useDefaultMargins="true"
+        android:visibility="invisible"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:id="@+id/buttonSelect"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_live_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="select File"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.03" />
+
+</LinearLayout>
